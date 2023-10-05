@@ -50,4 +50,3 @@ console.log(conta1.saldo);
 conta1.saque(200);
 
 console.log(conta1.saldo);
-teste
