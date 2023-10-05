@@ -1,0 +1,335 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Variaveis Base */
+:root{
+    font-size: 1.5rem;
+    --backg: #111111;
+    --backg2: #141417;
+    --text1: #95B5A2;
+    --text2: #FF7777;
+    --primaria: #C6D9AB;
+    --secundaria: #6BB064;
+    --terciaria: #6C1B1B;
+
+}
+
+/* Scroll */
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: var(--terciaria);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--secundaria);
+    border-radius: 0.5rem;
+}
+
+/* Corpo */
+body{
+    color: var(--text1);
+    background-color: var(--backg);
+    
+}
+
+main{
+    margin-left: 2rem;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+div{
+    padding-block: 0.5rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    display: block;
+    padding-block: 1rem;
+    font-weight: bold;
+
+}
+
+h2{
+    font-size: 1.4rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.4rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.4rem;
+    font-weight: bold;
+
+}
+
+p{
+    padding-inline-start: 1rem;
+    padding-block: 0.3rem;
+}
+
+
+
+input{
+    font-size: 1rem;
+    color: var(--text1);
+    width: 2rem;
+    padding-block: 0.1rem;
+    border-radius: 0.3rem;
+}
+
+input:focus{
+    background-color: var(--terciaria);
+}
+
+input[type=submit] {
+  background-color: var(--secundaria);
+  color: var(--terciaria);
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
+  width:fit-content;
+  border: none;
+  border-radius: 0.25;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=reset] {
+    background-color: var(--secundaria);
+    color: var(--terciaria);
+    padding-block: 0.3rem;
+    padding-inline: 1rem;
+    width:fit-content;
+    border: none;
+    border-radius: 0.25;
+    cursor: pointer;
+    float: left;
+  }
+
+input[type=file]{
+    background-color: var(--secundaria);
+    color: var(--terciaria);
+    padding-block: 0.3rem;
+    padding-inline: 1rem;
+    width:fit-content;
+    border: none;
+    border-radius: 0.25;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=file]::file-selector-button{
+    background-color: var(--primaria);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+input[type=text]{
+    font-size: 1rem;
+    color: var(--text1);
+    background-color: var(--backg2);;
+    width: 12rem;
+    padding-block: 0.1rem;
+    border-radius: 0.3rem;
+    margin-left: 1rem ;
+}
+
+input[type=number]{
+    font-size: 1rem;
+    color: var(--text1);
+    background-color: var(--backg2);
+    width: 12rem;
+    padding-block: 0.1rem;
+    border-radius: 0.3rem;
+}
+
+select{
+    font-size: 1rem;
+    color: var(--text1);
+    background-color: var(--backg2);
+    width: 12rem;
+    padding-block: 0.1rem;
+    border-radius: 0.3rem;
+}
+
+label{
+    display: inline-block;
+    padding-block: 0.1rem;
+    margin-right: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+}
+
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+    text-decoration: nome;
+    border: 0.15rem solid ;
+    border-radius: 0.5rem;
+    color: var(--text1);
+    background-color: #141417;
+    border-color: var(--secundaria);
+}
+
+button:hover{
+    color: var(--text2);
+    border-color: var(--terciaria);
+    transition-duration: 0.5s ease 0.2;
+}
+
+
+/* Classes */
+
+
+.page{
+    position: relative;
+    min-height: 100vh;
+}
+.content{
+    padding-bottom: 2.5rem;
+}
+
+.side{
+    width: 100%;
+    height: 7rem;
+    background-color: var(--backg2);
+    
+}
+.side button{
+    border: none;
+    text-decoration: none;
+    background: transparent;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+}
+
+.gato{
+    width: 7rem;
+    height: 7rem;
+    padding: 0.5rem;
+
+}
+
+.nav *{
+    padding-block: 0.2rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--secundaria);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.nav a:hover {
+    color: var(--terciaria);
+
+}
+
+.dia{
+    padding-inline-start: 0.6rem;
+    font-size: 1rem;
+    color: var(--secundaria);
+}
+
+.rainbow{
+    background-image: repeating-linear-gradient(to left,violet, indigo, blue, green, orange, red );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.envio{
+    display: table;
+}
+
+.formulario{
+    display:table;
+    padding: 1rem;
+}
+
+
+.navLinks li{
+    display: inline-flex;
+    padding: 0rem 0.5rem;
+
+}
+
+.destaque{
+    color: var(--terciaria);
+}
+
+.numero{
+    padding-left: 1rem;
+}
+.numero input[type=number]{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text1);
+    background-color: var(--backg2);
+    width: 8rem;
+    padding-block: 0.1rem;
+    border-radius: 0.3rem;
+}
+
+.rodape{
+    text-align: center;
+    padding: 3.5rem 10%;
+    background-color: var(--backg2);
+    position:relative;
+    bottom: 0rem;
+    width: 100%;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--secundaria);
+}
+.link:hover{
+    color: var(--terciaria);
+    transition: all 0.3s ease 0s;
+}
