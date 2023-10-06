@@ -145,8 +145,8 @@ function ex3(){
 
 
 function ex4(){
-    let n1 = prompt("Informe o primeiro numero: ");
-    let n2 = prompt("Informe o segundo numero: ");
+    let n1 = parseInt( prompt("Informe o primeiro numero: "));
+    let n2 = parseInt(prompt("Informe o segundo numero: "));
 
     if(n1 > n2){
         alert(n1+" é maior.")
