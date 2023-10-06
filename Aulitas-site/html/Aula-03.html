@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Aulitas-site/css/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Aula-03</title>
+
+    <script>
+  //      const nome = prompt("Digite seu nome");
+  //      const variavel1 = "Gusthavo";  // variavel String
+  //      var variavel2 = true;      // variavel Booleana
+  //      alert("Olá "+nome);
+    </script>
+
+</head>
+<body>
+    <header class="side">
+        <button type="button" onclick="window.location.href='https://music.youtube.com/watch?v=lYBUbBu4W08'">
+            <img class="gato" src="Image/todynho.png" alt="Meu gato">
+        </button>
+        <nav class="nav">
+            <ul class="navLinks">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Aula-03.html">Aula-03</a></li>
+                <li><a href="Aula-04.html">Aula-04</a></li>
+                <li><a href="Aula-05.html">Aula-05</a></li>
+                <li><a href="Aula-06.html">Aula-06</a></li>
+                <li><a href="Aula-07.html">Aula-07</a></li>
+                <li><a href="Aula-08.html">Aula-08</a></li>
+                <li><a href="Aula-09.html">Aula-09</a></li>
+                <li><a href="Aula-10.html">Aula-10</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aula-01 -->
+        <!-- Teste/explicação sobre Style -->
+        <div>
+            <h1>{Aula-03}<span class="dia">|22/08/23|</span></h1>
+
+            <h2>[Tipografia]</h2>
+            <p>No HTML/CSS possuimos uma grande variação de formas de modificar uma pagina Como: </p>
+            <p><span class="rainbow">Podemos modificar as cores das palavras</span> ou do <span class="fundo">fundo</span>.</p>
+            <p>Conseguimos também mudar os tamanhos:</p>
+            <p class="rainbow"> 
+                <b style="font-size: 10px;">A</b>
+                <b style="font-size: 15px;">A</b>
+                <b style="font-size: 20px;">A</b>
+                <b style="font-size: 25px;">A</b>
+                <b style="font-size: 30px;">A</b>
+                <b style="font-size: 35px;">A</b>
+                <b style="font-size: 40px;">A</b>
+                <b style="font-size: 45px;">A</b>
+                <b style="font-size: 50px;">A</b>
+                <b style="font-size: 55px;">A</b>
+                <b style="font-size: 60px;">A</b> 
+            </p>
+
+            <p>E conseguimos adicionar marcações como 
+                <b style="font-weight: bold;">Bold</b> / 
+                <i style="font-style: italic;">Italic</i> / 
+                <mark>Marcado</mark> / 
+                <b style="text-decoration: underline;">Sublinhado</b> Etc 
+            </p>
+        </div>
+        <!-- Teste/Explicação Sobre Form -->
+        <div>
+            <h1>{Pesquisa}<span class="aula">|forms|</span></h1>
+            <h2>[Tipos de Formularios]</h2>
+
+            <form >
+                <div>  
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <br>
+                    <label for="idade">idade:</label>
+                    <input type="number" id="idade" name="idade"><br>
+                    <br>
+                    <label for="curso">Curso:</label>
+                    <select>
+                        <option value="ccp">Ciência da computação</option>
+                        <option value="ads">Administração</option>
+                        <option value="comida">Outro</option>
+                    </select><br>
+                    <br>
+                    <label for="genero">Genero:</label>
+                    <select>
+                        <option value="masculino">Maculino</option>
+                        <option value="femino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select><br>
+                    <br>
+                    <label for="cpf">CPF:</label><br>
+                </div>
+                <div> 
+                    <p>Possui gatos?</p>
+                    <input type="checkbox" id="sim" name="sim" value="sim">
+                    <label for="sim">Sim</label><br>
+                    <input type="checkbox" id="nao" name="nao" value="nao">
+                    <label for="nao">não</label><br>
+                    <p>Quantos?</p>
+                    <input type="radio" id="1" name="quantG" value="1">
+                    <label for="1">1</label><br>
+                    <input type="radio" id="2" name="quantG" value="2">
+                    <label for="2">2</label><br>
+                    <input type="radio" id="3+" name="quantG" value="3+">
+                    <label for="3+">3 ou mais</label><br>
+                    <br>
+                    <p>Possui cachorros?</p>
+                    <input type="checkbox" id="sim" name="sim" value="sim">
+                    <label for="sim">Sim</label><br>
+                    <input type="checkbox" id="nao" name="nao" value="nao">
+                    <label for="nao">não</label><br>
+                    <p>Quantos?</p>
+                    <input type="radio" id="1" name="quantC" value="1">
+                    <label for="1">1</label><br>
+                    <input type="radio" id="2" name="quantC" value="2">
+                    <label for="2">2</label><br>
+                    <input type="radio" id="3+" name="quantC" value="3+">
+                    <label for="3+">3 ou mais</label><br>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>RODA-PÉ FODA ©</p>
+    </footer>
+</body>
+</html>
