@@ -185,7 +185,7 @@ function fibo(){
         document.write(v[i]+"<br>")    
         */
         document.write(v[0]+"<br>")
-        temp = v[0]+v[0+1]
+        temp = v[0]+v[1]
         v[0] = v[1]
         v[1] = temp
     }
