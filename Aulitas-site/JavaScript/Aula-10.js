@@ -118,6 +118,7 @@ function binaryConvert(){
     let dec = parseInt(prompt("Dê um numero para conversão"));
     let bin = "";
 
+    document.getElementById("binConvert").innerHTML = "O decimal "+dec+"<br>";
     while(dec > 0){
         if(dec %2){
             bin = "1" + bin;
@@ -126,7 +127,8 @@ function binaryConvert(){
         } 
         dec = Math.floor(dec/2);
     }
-    alert(bin)
+    document.getElementById("binConvert").innerHTML += "Em binario é "+bin;
+
 
     /*
     sem for, muito trabalho mais facil assim
@@ -156,8 +158,12 @@ Exemplo: R$11257
 
 function challenge(){
     let value = parseInt(prompt("Informe um valor: "))
+    let vParameter = [100,50,20,10,5,2,1];
 
-    let cem = Math.floor(value/100);
-    let cinquenta = Math.floor(value%100/50);  
-    alert (cem+", "+cinquenta);
+    document.getElementById("moneyResult").innerHTML = "R$"+value+"<br>"
+    for(i = 0; i <= 6; i++){
+        document.getElementById("moneyResult").innerHTML += Math.floor(value/vParameter[i])+" nota(s) de R$ "+vParameter[i]+",00 <br>";
+        value = Math.floor(value%vParameter[i]);
+    }
+
 }
