@@ -157,7 +157,7 @@ Exemplo: R$11257
 */
 
 function challenge(){
-    let value = parseInt(prompt("Informe um valor: "))
+    let value = parseInt(prompt("Informe um valor em R$: "))
     let vParameter = [100,50,20,10,5,2,1];
 
     document.getElementById("moneyResult").innerHTML = "R$"+value+"<br>"
@@ -166,4 +166,32 @@ function challenge(){
         value = Math.floor(value%vParameter[i]);
     }
 
+    /*
+    a função pede um valor em reais e com um vetor com os valores de 
+    notas possiveis ele usa um for em que pega o index desse vetor
+    e faz a divisão do valor dado pelo respectivo index da array
+    logo após ele faz o modulo e reescreve o valor.
+    */
+}
+
+function fibo(){
+    let n = parseInt(prompt("Escreva quandos numeros da sequencia de fibonacci"))-3;
+    let v = [0,1];
+
+
+    for(i=0; i<=n; i++ ){ 
+        /*
+        v.push(v[i]+v[i+1])
+        document.write(v[i]+"<br>")    
+        */
+        document.write(v[0]+"<br>")
+        temp = v[0]+v[0+1]
+        v[0] = v[1]
+        v[1] = temp
+    }
+    /*
+    Infelizmente o ele só consegue manter até o número 81 da sequencia
+    no 82 ele da erro por 1, em vez de 1 o ultimo numero é 0, não sei pq
+    provavelmente por conta da memoria
+    */
 }
