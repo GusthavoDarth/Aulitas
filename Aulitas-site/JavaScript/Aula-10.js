@@ -175,19 +175,16 @@ function challenge(){
 }
 
 function fibo(){
-    let n = parseInt(prompt("Escreva quandos numeros da sequencia de fibonacci"))-3;
-    let v = [0,1];
+    let n = parseInt(prompt("Escreva quandos numeros da sequencia de fibonacci")-1);
+    let n1 = BigInt(0);
+    let n2 = BigInt(1);
 
 
     for(i=0; i<=n; i++ ){ 
-        /*
-        v.push(v[i]+v[i+1])
-        document.write(v[i]+"<br>")    
-        */
-        document.write(v[0]+"<br>")
-        temp = v[0]+v[1]
-        v[0] = v[1]
-        v[1] = temp
+        document.write(n1+"<br>")
+        temp = BigInt(n1+n2)
+        n1 = n2
+        n2 = temp
     }
     /*
     Infelizmente o ele só consegue manter até o número 81 da sequencia
