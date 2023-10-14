@@ -181,14 +181,9 @@ function fibo(){
 
 
     for(i=0; i<=n; i++ ){ 
-        document.write(n1+"<br>")
-        temp = BigInt(n1+n2)
-        n1 = n2
-        n2 = temp
+        temp = BigInt(n1+n2);
+        n1 = n2;
+        n2 = temp;
     }
-    /*
-    Infelizmente o ele só consegue manter até o número 81 da sequencia
-    no 82 ele da erro por 1, em vez de 1 o ultimo numero é 0, não sei pq
-    provavelmente por conta da memoria
-    */
+    document.write(n1+",");
 }
