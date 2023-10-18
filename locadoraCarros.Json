@@ -1,0 +1,27 @@
+[
+    {
+       "id": "161",
+       "fabricante": "Tesla",
+       "modelo": "model 3",
+       "ano": "2019"
+    },
+    {
+       "id": "234",
+       "fabricante": "Tesla",
+       "modelo": "model 3",
+       "ano": "2020"
+    },
+    {
+       "id": "201",
+       "fabricante": "BMW",
+       "modelo": "X2",
+       "ano": "2019"
+    },
+    {
+       "id": "127",
+       "fabricante": "Audi",
+       "modelo": "A6",
+       "ano": "2018"
+    }
+  ]
+  
