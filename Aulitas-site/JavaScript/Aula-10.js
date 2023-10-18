@@ -181,9 +181,9 @@ function fibo(){
 
 
     for(i=0; i<=n; i++ ){ 
+        document.write(n1+"<br>");
         temp = BigInt(n1+n2);
         n1 = n2;
         n2 = temp;
     }
-    document.write(n1+",");
 }
