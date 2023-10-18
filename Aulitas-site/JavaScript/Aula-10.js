@@ -175,12 +175,12 @@ function challenge(){
 }
 
 function fibo(){
-    let n = parseInt(prompt("Escreva quandos numeros da sequencia de fibonacci")-1);
+    let n = parseInt(prompt("Escreva quandos numeros da sequencia de fibonacci"));
     let n1 = BigInt(0);
     let n2 = BigInt(1);
 
 
-    for(i=0; i<=n; i++ ){ 
+    for(i=0; i<=n-1; i++ ){ 
         document.write(n1+"<br>");
         temp = BigInt(n1+n2);
         n1 = n2;
