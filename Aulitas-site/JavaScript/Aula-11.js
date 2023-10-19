@@ -1,5 +1,5 @@
-xhr = new XMLHttpRequest();
-console.log(xhr);
+// xhr = new XMLHttpRequest();
+// console.log(xhr);
 
 // xhr.onreadystatechange = function(){
 //       if(xhr.readyState == 4 && xhr.status == 200){
@@ -10,20 +10,24 @@ console.log(xhr);
 
 // xhr.open("GET","/locadoraCarros.Json",true)
 // xhr.send();
-catchJujuba()
-.then(response =>{
-    console.log("foi jujuba")
-})
-.catch(ERROR =>{
-    console.log(ERROR);
-    console.log("ERROR");
-});
+
 
 async function catchJujuba(){
     const response = await fetch("/Aulitas-site/Image/juju.png");
     const blob = await response.blob();
     document.getElementById("jujuba").src = URL.createObjectURL(blob);
 }
+
+catchJujuba()
+// .then(response =>{
+//     console.log("foi jujuba")
+// })
+// .catch(ERROR =>{
+//     console.log(ERROR);
+//     console.log("ERROR");
+// });
+
+
 
 async function catchTexto(){
     const response = await fetch("/Cores.txt");
@@ -32,13 +36,14 @@ async function catchTexto(){
 }
 
 catchTexto()
-.then(response =>{
-    console.log("foi texto")
-})
-.catch(ERROR =>{
-    console.log(ERROR);
-    console.log("ERROR");
-});
+// .then(response =>{
+//     console.log("foi texto")
+// })
+// .catch(ERROR =>{
+//     console.log(ERROR);
+//     console.log("ERROR");
+// });
+
 
 
 const filenames = [
@@ -56,14 +61,34 @@ async function catchImagens(filenames){
   
     }
 }
+
 catchImagens(filenames)
-.then(response =>{
-    console.log("foi imagens")
-})
-.catch(ERROR =>{
-    console.log(ERROR);
-    console.log("ERROR");
-});
+// .then(response =>{
+//     console.log("foi imagens")
+// })
+// .catch(ERROR =>{
+//     console.log(ERROR);
+//     console.log("ERROR");
+// });
 
 
+// data teste: /Aulitas-site/DataTypes/csv/test.csv
+// data real : ZonAnn.Ts+dSST.csv
+// data test : Sample-Spreadsheet-100-rows.csv
 
+
+async function readData(){
+    teste = "/Aulitas-site/DataTypes/csv/test.csv";
+    real = "/Aulitas-site/DataTypes/csv/ZonAnn.Ts+dSST.csv";
+    const response = await fetch(real);
+    const data = await response.text();
+    
+    const table = data.split("\n").slice(1);
+    table.forEach(row => {
+        const columns = row.split(',');
+        const year = columns[0];
+        const temp = columns[1];
+        document.getElementById("table").innerText += year+" "+temp+"\n";
+        console.log(year,temp);    
+    });
+}

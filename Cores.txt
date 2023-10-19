@@ -1,10 +1,13 @@
+background1: #111111;
 
-background #FAFFF7
+background2: #141417;
 
-texto #4A5950
+texto1: #95B5A2;
 
-primaria #284C3B
+texto2: #FF7777;
 
-secundaria #394C39
+primaria: #C6D9AB;
 
-terciaria #AAC9BB
+secundaria: #6BB064;
+
+terciaria: #6C1B1B;
