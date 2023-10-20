@@ -187,3 +187,42 @@ function fibo(){
         n2 = temp;
     }
 }
+
+
+
+
+function findelem(){
+    let v = [];
+
+    for(i = 0; i <= 9; i++){
+        v.push(prompt("Dê o "+(i+1)+"° número"))
+    }
+    document.getElementById("findelem").innerHTML = "vetor: "+v+"<br>"
+
+    let find = prompt("Qual número você quer checar?")
+    
+    let j = 0
+    for(i = 0; i <= 9; i++){
+        if(v[i] == find){
+            document.getElementById("findelem").innerHTML += find+" se encontra na posição "+i+".<br>";
+        } else j++;
+
+        if(j == 10){
+            document.getElementById("findelem").innerHTML += find+" não se encontra no vetor."
+        }
+    }
+
+}
+
+function frele(){
+    let v = [1,2,3,4,5]
+    let count = 0
+
+    // for(i = 0; i <= 5; i++){
+    //     v.push(Math.floor(Math.random()*5))
+    // }
+    document.getElementById("frele").innerHTML = "Vetor: "+v+"<br>";
+    
+
+}
+//document.getElementById("frele").innerHTML += j+" apareceu "+count+" vez(es)";
