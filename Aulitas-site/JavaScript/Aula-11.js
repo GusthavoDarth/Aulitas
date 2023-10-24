@@ -84,6 +84,7 @@ async function readData(){
     const data = await response.text();
     
     const table = data.split("\n").slice(1);
+    console.log();
     table.forEach(row => {
         const columns = row.split(',');
         const year = columns[0];
