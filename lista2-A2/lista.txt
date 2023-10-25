@@ -1,0 +1,4 @@
+jogo da velha
+busca de cep
+jo-ken-po
+busca sequencial melhorada

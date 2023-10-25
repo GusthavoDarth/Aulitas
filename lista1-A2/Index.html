@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src=""></script>
+    <title>Lista-1</title>
+</head>
+<body onload="tabela()">
+    <div>
+        <h2>Cadastrar aluno aluno</h2>
+        <input type="text" placeholder="Nome do aluno" id="cname">
+        <br>
+        <input type="number" placeholder="Ra do aluno" id="cra">
+        <br>
+        <input type="number" placeholder="ano de ingresso" id="cano">
+        <button onclick="cadal()">Cadastrar</button>
+    </div>
+
+    <div>
+        <h2>Edição</h2>
+        <div>
+            <h3>Exclusão do cadastro por ID</h3>
+            <input type="number" id="del" placeholder="Escreva o id">
+            <button onclick="delal()">deletar</button>
+        </div>
+        <div>
+            <h3>Edição de informação dos cadastros</h3>
+            <input type="text" placeholder="Nome ou Ra do aluno" id="info">
+            <button onclick="edital()">Editar</button>
+
+
+        </div>
+    </div>
+
+    <div>
+        <h2>Busca de Aluno</h2>
+        <input type="text" placeholder="Nome do aluno" id="fname">
+        <input type="number" placeholder="Ra do aluno" id="fra">
+        <button onclick="alfind()" onclick="tabela()">teste</button>
+        <p id="faluno"></p>
+    </div>
+    
+    <div>
+        <h2>tabela</h2>
+        <button onclick="tabela()">Atualiza</button>
+        <p id="tabela"></p>
+
+    </div>
+
+</body>
+</html>

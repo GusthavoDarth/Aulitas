@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lista2-A2/css/style.css">
+    <script src="/lista2-A2/javascript/seq.js"></script>
+    <title>Lista-2</title>
+</head>
+
+<body>
+    <header class="side">
+        <button type="button" onclick="window.location.href='https://music.youtube.com/watch?v=lYBUbBu4W08'">
+            <img class="gato" src="todynho.png" alt="Meu gato">        </button>
+        <nav class="nav">
+            <ul class="navLinks">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="jdv.html">Jogo-da-velha</a></li>
+                <li><a href="cep.html">Busca-cep</a></li>
+                <li><a href="jkp.html">Jo-Ken-Po</a></li>
+                <li><a href="seq.html">Busca-sequencial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Busca sequencial</h1>
+    <p>Escreva os elementos da lista um por vez e clique no botão adicionar</p>
+    <input type="text" id="input" placeholder="12, papel, etc...">
+    <button onclick="entry()">Adicionar</button>
+    <br>
+    <p>Escreva o que deseja procurar e clique no botão procurar</p>
+    <button onclick="find()">Procurar</button>
+    <br>
+    <p id="title"></p>
+    <br>
+    <p id="show"></p>
+    <br>
+    <br>
+    <p>Mostra todos os elementos da lista <button onclick="show()">mostrar</button> </p>
+    <p id="sarr"></p>
+
+ </body>
+
+
+</html>

@@ -80,7 +80,7 @@ catchImagens(filenames)
 async function readData(){
     let teste = "/Aulitas-site/DataTypes/csv/test.csv";
     let real = "/Aulitas-site/DataTypes/csv/ZonAnn.Ts+dSST.csv";
-    const response = await fetch(teste);
+    const response = await fetch(real);
     const data = await response.text();
     
     const table = data.split("\n").slice(1);
