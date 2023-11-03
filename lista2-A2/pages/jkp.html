@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/lista2-A2/css/style.css">
+    <script src="/lista2-A2/javascript/jkp.js"></script>
     <title>Lista-2</title>
 </head>
 
@@ -21,7 +22,28 @@
             </ul>
         </nav>
     </header>
-
+    
+    <div class="center">
+        <select id="p1">
+            <optgroup label="Player 1">
+            <option value="Pedra">Pedra</option>
+            <option value="Papel">Papel</option>
+            <option value="Tesoura">Tesoura</option>
+            </optgroup>
+        </select>
+        <p>Vs</p>
+        <select id="p2">
+            <optgroup label="Player 2">
+                <option value="Pedra">Pedra</option>
+                <option value="Papel">Papel</option>
+                <option value="Tesoura">Tesoura</option>
+            </optgroup>    
+        </select>
+        <div class="centerbutton">
+            <button onclick="jogo()">Po</button>
+            <h1 id="info"></h1>
+        </div>
+    </div>
  </body>
 
 

@@ -258,3 +258,98 @@ header{
     margin-left: 0;
     margin-top: 1rem;
 }
+
+
+.center{
+    position: relative;
+    margin: auto;
+
+    width: 550px;
+}
+.center p,h1{
+    text-align: center;
+    padding-left: 0;
+    font-size: 4rem;
+}
+
+
+.centerbutton{
+    margin-top: 1rem;
+
+}
+.centerbutton button{
+    margin-left: 0;
+    font-size: 2rem;
+    position: relative;
+    margin-left: 40%;
+
+}
+
+
+.center select{
+    font-size: 4rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+    text-decoration: nome;
+    border: 0.15rem solid ;
+    border-radius: 0.5rem;
+    color: var(--text1);
+    background-color: #141417;
+    border-color: var(--secundaria);
+}
+
+
+
+
+.title{
+    text-align: center;
+}
+
+.tabaleiro{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-color: var(--secundaria);
+    border: solid 0.2rem;
+    position:relative;
+    width: 367px;
+    margin: auto;
+}
+
+
+.cell{
+    padding: 0;
+    padding-top: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--backg2);
+    border-color: var(--secundaria);
+    border: solid 0.2rem;
+    color: var(--text1);
+}
+
+.borda:hover{
+    border-color: var(--terciaria);
+
+}
+
+.opcao{
+    width: 368px;
+    margin: auto;
+    display:flex;
+    align-items: center;
+}
+
+.opcao input[type=radio]{
+    font-size: 1rem;
+    color: var(--text1);
+    width: 2rem;
+    padding-block: 0.1rem;
+    border-radius: 0.3rem;
+
+
+}

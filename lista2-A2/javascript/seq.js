@@ -3,8 +3,12 @@ let v = [];
 
 function entry(){
     let elem = document.getElementById("input").value;
-    v.push(elem);
+    if(elem != ''){
+        v.push(elem);
+    } else alert("Coloque elementos validos");
+
 }
+
 
 function find(){
     let elem = document.getElementById("input").value;
@@ -40,4 +44,5 @@ function show(){
             document.getElementById("sarr").innerHTML += "index: "+i+"<br> content: "+v[i]+"<br><br>";
         }
     }
+    console.log(v)
 }

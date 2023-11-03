@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+:root{
+    font-size: 1.5rem;
+    --backg: #111111;
+    --backg2: #141417;
+    --text1: #95B5A2;
+    --text2: #FF7777;
+    --primaria: #C6D9AB;
+    --secundaria: #6BB064;
+    --terciaria: #6C1B1B;
+
+}
+
+
+/* Scroll */
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: var(--terciaria);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--secundaria);
+    border-radius: 0.5rem;
+}
+
+/* Corpo */
+body{
+    color: var(--text1);
+    background-color: var(--backg);
+}
+
+
+h1{
+    font-size: 2.5rem;
+    display: block;
+    padding-block: 1rem;
+    font-weight: bold;
+
+}
+
+h2{
+    font-size: 1.4rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.4rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.4rem;
+    font-weight: bold;
+
+}
+
+p{
+    padding-inline-start: 1rem;
+    padding-block: 0.3rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+    text-decoration: nome;
+    border: 0.15rem solid ;
+    border-radius: 0.5rem;
+    color: var(--text1);
+    background-color: #141417;
+    border-color: var(--secundaria);
+}
+
+button:hover{
+    color: var(--text2);
+    border-color: var(--terciaria);
+    transition-duration: 0.5s ease 0.2;
+}
+
+.block {
+    width: 2rem;
+    border: 0.05rem solid;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: warp;
+    justify-content: center;
+}
+
+.num{
+    width: 100px;
+    float: left;
+}
+.info{
+    text-align: center;
+    padding-block: 0.5rem;
+
+}
+.cartela{
+    text-align: center;
+
+}
+
+input[type=number]{
+    width: 2rem;
+}
+
+.a{
+    margin-right: 26px;
+}
+.b{
+    margin-right: 40px;
+}
+.c{
+    margin-right: 6px;
+}
+.d{
+    margin-right: 24px;
+}
+.comprar{
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    margin: 0;
+}

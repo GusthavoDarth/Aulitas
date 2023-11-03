@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bingo.js"></script>
+    <script src="objeto.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Prova</title>
+</head>
+<body>
+    <div>
+
+        <div class="info">
+            <button id="button2" onclick="criar()">Criar Cartelas</button>
+            <button id="button1" >Sortear</button>
+            </div>
+            <h1  class="info">BINGO</h1>
+            <h2 id="info" class="info"></h2>
+            <div  id="cartela" class="cartela">
+            </div>
+            <br>
+            <br>
+            <div id="numsort" class="info">
+                Numeros Sorteados:
+            </div>
+    </div>
+    <div class="info">
+        <h1 id="info" class="info">COMPRA</h1>
+        <label for="Cnome" class="d">Nome do Cliente</label>
+        <input type="text" placeholder="Nome" value="Gusthavo" Valu id="Cnome">
+        <br>
+        <label for="Vnome">Nome do Vender(a)</label>
+        <input type="text" placeholder="Nome" value="Papelaria" id="Vnome">
+        <br>
+        <div class="inputs">
+            <label for="Caneta" class="a">Caneta R$: 8</label>
+            <input min="0" type="number" placeholder="Quantidade" value="0" id="Caneta">
+            <br>
+            <label for="Lapis" class="b">Lápis R$: 5</label>
+            <input min="0" type="number" placeholder="Quantidade" value="0" id="Lapis">
+            <br>
+            <label for="Borracha" class="c">Borracha R$: 4</label>
+            <input min="0" type="number" placeholder="Quantidade" value="0" id="Borracha">
+            <br>
+            <label for="Caderno">Caderno R$: 15</label>
+            <input min="0" type="number" placeholder="Quantidade" value="0" id="Caderno">
+            <br>
+        </div>
+        <select id="pagamento">
+            <optgroup label="Forma de pagamento">
+            <option value="0">A vista</option>
+            <option value="1">Parcelado</option>
+            </optgroup>
+        </select>
+        <br>
+        <button onclick="comprar()" class="comprar">Comprar</button>
+        <div id="objinfo">
+
+        </div>
+    </div>
+
+
+</body>
+</html>

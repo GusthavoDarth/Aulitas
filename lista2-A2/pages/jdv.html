@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/lista2-A2/css/style.css">
     <script src="/lista2-A2/javascript/jdv.js"></script>
-    <title>Lista-2</title>
+    <title>Jogo da Velha</title>
 </head>
-
 <body>
     <header class="side">
         <button type="button" onclick="window.location.href='https://music.youtube.com/watch?v=lYBUbBu4W08'">
-            <img class="gato" src="todynho.png" alt="Meu gato">        </button>
+            <img class="gato" src="todynho.png" alt="Meu gato">
+        </button>
         <nav class="nav">
             <ul class="navLinks">
                 <li><a href="Index.html">Home</a></li>
@@ -22,24 +22,34 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
-        
-        <div class="conteudo">
-            <h1 class="titulo">{Jogo da Velha}</h1>
-            <div class="outside">
-                
-                <h2 id="turno">[X]</h2>
-                
-                <div id="jogo" class="inside"></div>
-                
-                <h2 id="aviso">[X]</h2>
-    
-                <button class="reset" id="reset" onclick="novogame()">Reset</button>
-            </div>
+
+    <div>
+        <h1 class="title">{ jogo da Velha }</h1>
+        <h2 class="title" id="turno"></h2>
+    </div>
+    <div class="tabaleiro" id="tabuleiro">
+        <div class="cell borda" id="0"></div>
+        <div class="cell borda" id="1"></div>
+        <div class="cell borda" id="2"></div>
+        <div class="cell borda" id="3"></div>
+        <div class="cell borda" id="4"></div>
+        <div class="cell borda" id="5"></div>
+        <div class="cell borda" id="6"></div>
+        <div class="cell borda" id="7"></div>
+        <div class="cell borda" id="8"></div>
+    </div>
+    <div class="opcao">
+        <div>
+            <fieldset>
+                <label for="2players">2 players</label>
+                <input type="radio" name="Chose" id="2players" checked>
+                <br>
+                <label for="Easy">Bot</label>
+                <input type="radio" name="Chose" id="Easy">
+            </fieldset>
         </div>
-    </main>
+        <button onclick="location.reload()">Novo Jogo</button>    
+    </div>
 
-
- </body>
+</body>
 </html>
