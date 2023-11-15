@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Aulitas-site/Styles/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="jquery.js"></script>
+    <title>Jquery</title>
+</head>
+<body>
+  <div id="content"></div>
+  <input type="text" name="field" id="texto" placeholder="Preencha">
+  <button id="claro" onclick="claro()">Claro</button>
+  <button id="escuro" onclick="escuro()">Escuro</button>
+  <script>
+    $("#content").html("Tomatinho");
+    $("#content").append("<br>Texto 1");
+
+    function claro(){
+      $("body").css("--backg","#C6D9AB")
+      $("body").css("--text1","#141417")
+      $("button").css("color","#95B5A2")
+    }
+    function escuro(){
+      $("body").css("--backg","#111111")
+      $("body").css("--text1","#95B5A2")
+    }
+
+  </script>
+</body>
+</html>
